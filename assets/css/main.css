@@ -30,7 +30,7 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #2c4964;  /* The default color of the main navmenu links */
-  --nav-hover-color: #1977cc; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color:#060606; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #2c4964; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -941,11 +941,13 @@ section,
   margin: 0;
   font-size: 48px;
   font-weight: 700;
+  color:#060606;
 }
 
 .hero .welcome p {
   font-size: 24px;
   margin: 0;
+  color:#060606;
 }
 
 .hero .content {
@@ -1769,6 +1771,61 @@ section,
     transform: translate(-50%, -50%) scale(1);
   }
 }
+
+/* Container styles for the Google Translate widget */
+.translate-container {
+  display: inline-block; /* Align inline for flexibility */
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Style the dropdown inside the widget */
+.goog-te-gadget {
+  font-size: 14px !important;
+  font-family: Arial, sans-serif !important;
+  color: #333 !important;
+  padding: 0 !important; /* Removes extra padding */
+  margin: 0 !important; /* Removes extra margin */
+}
+
+/* Dropdown menu appearance */
+.goog-te-combo {
+  background-color: #ffffff !important;
+  border: 1px solid #ddd !important;
+  padding: 5px !important;
+  border-radius: 4px !important;
+  color: #333 !important;
+  width: 100%; /* Full width dropdown for better UX */
+  max-width: 200px; /* Optional: Limit width for smaller containers */
+}
+
+/* Hover effect for the dropdown */
+.goog-te-combo:hover {
+  background-color: #f1f1f1 !important;
+  border-color: #aaa !important;
+}
+
+/* Remove Google Translate branding (icon and text) */
+.goog-te-gadget > *:not(:first-child) {
+  display: none !important;
+}
+
+/* Optional: Adjust alignment of the dropdown */
+.goog-te-gadget-simple {
+  text-align: center !important;
+  line-height: 1.5 !important;
+}
+
+/* Hide the Google Translate banner that appears at the top of the page */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
 
 
 
