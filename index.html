@@ -99,7 +99,7 @@
         </nav>
         
 
-        <a class="cta-btn d-none d-sm-block" href="http://localhost/chinamiram/chinamiram/whatsapp1.html">Gravience</a>
+        <a class="cta-btn d-none d-sm-block" href="#appointment">Gravience</a>
         
         <li id="google_translate_element" class="translate-container">
           <script type="text/javascript">
@@ -422,7 +422,7 @@
       <section id="appointment" class="appointment section">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Grievance</h2>
+          <h2>Gravience</h2>
           <p>Raise your complaints and get the solution.</p>
         </div><!-- End Section Title -->
       
@@ -472,33 +472,32 @@
             <div class="text-center"><button type="submit">Make an Appointment</button></div>
           </div>
         </form> -->
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+        <form id="whatsappForm" action="send_whatsapp.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
 
             <div class="row gy-4">
               
               <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+              <input type="text" name="name" for="name" class="form-control" placeholder="Your Name" required="">
               </div>
       
             <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+              <input type="email" class="form-control" for="name" name="email" placeholder="Your Email" required="">
               </div>
       
               <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+              <input type="text" for="subject" class="form-control" name="subject" placeholder="Subject" required="">
               </div>
       
               <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+              <textarea for="complaint" class="form-control" name="complaint" id="complaint" rows="6" placeholder="Message" required=""></textarea>
               </div>
       
-              <div class="col-md-12 text-center"> 
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
+              <div class="col-md-12 text-center">
+                <div id="loading" class="loading" style="display: none;">Loading...</div>
+                <div class="error-message" style="display: none; "></div>
+                <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
                 <button type="submit">Send Message</button>
-              </div>
+            </div>            
               
             </div>
           </form>
@@ -1182,6 +1181,61 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+   document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const form = this;
+    const loadingDiv = form.querySelector('.loading');
+    const errorDiv = form.querySelector('.error-message');
+    const successDiv = form.querySelector('.sent-message');
+
+    // Show loading and hide other messages
+    loadingDiv.style.display = 'block';
+    errorDiv.style.display = 'none';
+    successDiv.style.display = 'none';
+
+    // Create FormData object
+    const formData = new FormData(form);
+
+    // Send form data
+    fetch('send_whatsapp.php', {
+        method: 'POST',
+        body: formData,
+    })
+        .then((response) => {
+            // Parse the response as JSON
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then((data) => {
+            loadingDiv.style.display = 'none';
+
+            if (data.success) {
+                // Show success message
+                successDiv.textContent = data.message || 'Your message has been sent. Thank you!';
+                successDiv.style.display = 'block';
+                errorDiv.style.display = 'none';
+                form.reset(); // Reset the form on success
+            } else {
+                // Show error message
+                errorDiv.textContent = data.message || 'An error occurred. Please try again.';
+                errorDiv.style.display = 'block';
+                successDiv.style.display = 'none';
+            }
+        })
+        .catch((error) => {
+            // Handle network or other errors
+            loadingDiv.style.display = 'none';
+            errorDiv.textContent = 'An error occurred while sending the message. Please try again.';
+            errorDiv.style.display = 'block';
+            successDiv.style.display = 'none';
+        });
+});
+
+    </script>
 
 </body>
 
