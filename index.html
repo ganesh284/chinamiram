@@ -24,9 +24,13 @@
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <script src="config.js"></script>
+
 
 
   <!-- =======================================================
@@ -64,7 +68,7 @@
         <a href="index.html" class="logo d-flex align-items-center me-auto">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">CHINAAMIRAM</h1>
+          <h1 class="sitename">MANA CHINAAMIRAM</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -99,7 +103,7 @@
         </nav>
         
 
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Gravience</a>
+        <a class="cta-btn d-none d-sm-block" href="#appointment">Grievance</a>
         
         <li id="google_translate_element" class="translate-container">
           <script type="text/javascript">
@@ -422,7 +426,7 @@
       <section id="appointment" class="appointment section">
 
         <div class="container section-title" data-aos="fade-up">
-          <h2>Gravience</h2>
+          <h2>Grievance</h2>
           <p>Raise your complaints and get the solution.</p>
         </div><!-- End Section Title -->
       
@@ -472,16 +476,16 @@
             <div class="text-center"><button type="submit">Make an Appointment</button></div>
           </div>
         </form> -->
-        <form id="whatsappForm" action="send_whatsapp.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+        <form id="whatsappForm" action="#" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
 
             <div class="row gy-4">
               
               <div class="col-md-6">
               <input type="text" name="name" for="name" class="form-control" placeholder="Your Name" required="">
               </div>
-      
+              
             <div class="col-md-6 ">
-              <input type="email" class="form-control" for="name" name="email" placeholder="Your Email" required="">
+              <input type="tel" class="form-control" for="mobile" name="mobile" placeholder="Phone number" required="">
               </div>
       
               <div class="col-md-12">
@@ -489,7 +493,7 @@
               </div>
       
               <div class="col-md-12">
-              <textarea for="complaint" class="form-control" name="complaint" id="complaint" rows="6" placeholder="Message" required=""></textarea>
+              <textarea for="complaint" class="form-control" name="complaint" id="complaint" rows="6" placeholder="Description" required=""></textarea>
               </div>
       
               <div class="col-md-12 text-center">
@@ -1181,7 +1185,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script>
+  <!-- <script>
    document.getElementById('whatsappForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -1235,7 +1239,85 @@
         });
 });
 
-    </script>
+    </script> -->
+    <script>
+  document.getElementById('whatsappForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const loading = document.getElementById('loading');
+    const errorMessage = document.querySelector('.error-message');
+    const sentMessage = document.querySelector('.sent-message');
+
+    loading.style.display = 'block';
+    errorMessage.style.display = 'none';
+    sentMessage.style.display = 'none';
+
+    const formData = {
+        name: this.querySelector('input[name="name"]').value,
+        mobile: this.querySelector('input[name="mobile"]').value,
+        subject: this.querySelector('input[name="subject"]').value,
+        complaint: this.querySelector('textarea[name="complaint"]').value,
+    };
+
+    try {
+        const whatsappNumber = "918919218529";
+        const apiEndpoint = `https://live-mt-server.wati.io/324318/api/v1/sendTemplateMessage?whatsappNumber=${whatsappNumber}`;
+        
+        const templateRequest = {
+            template_name: "diwali",
+            broadcast_name: "diwali_301220241212",
+            parameters: [
+                { 
+                    name: "vamsi",
+                    value: formData.name 
+                }
+            ]
+        };
+
+        const response = await fetch(apiEndpoint, {
+            method: 'POST',
+            headers: {
+                'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3MGQxZmMzMC1iZDM4LTQ2OGEtOTQ1Ni03Y2FkZjBmZDkxNDYiLCJ1bmlxdWVfbmFtZSI6InNhbmp1X2NzZEBzcmtyZWMuZWR1LmluIiwibmFtZWlkIjoic2FuanVfY3NkQHNya3JlYy5lZHUuaW4iLCJlbWFpbCI6InNhbmp1X2NzZEBzcmtyZWMuZWR1LmluIiwiYXV0aF90aW1lIjoiMTIvMzAvMjAyNCAwNjozMzowMSIsInRlbmFudF9pZCI6IjMyNDMxOCIsImRiX25hbWUiOiJtdC1wcm9kLVRlbmFudHMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBRE1JTklTVFJBVE9SIiwiZXhwIjoyNTM0MDIzMDA4MDAsImlzcyI6IkNsYXJlX0FJIiwiYXVkIjoiQ2xhcmVfQUkifQ.YCqRPyF1jER214sFJuYlN05RbmQTFJ0m4-9bpupoq_Y',
+                'Content-Type': 'application/json-patch+json',
+                'accept': '/'
+            },
+            body: JSON.stringify(templateRequest)
+        });
+
+        const result = await response.json();
+        console.log('API Response:', result);
+
+        loading.style.display = 'none';
+
+        if (result.result === true) {
+            Swal.fire({
+                title: 'Success!',
+                text: 'Your message has been sent successfully!',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            }).then(() => {
+                this.reset();
+            });
+        } else {
+            throw new Error('Message sending failed');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        loading.style.display = 'none';
+        
+        // Show error popup
+        Swal.fire({
+            title: 'Error!',
+            text: error.message,
+            icon: 'error',
+            confirmButtonText: 'OK'
+        });
+    }
+});
+  </script>
+
+
+</body>
 
 </body>
 
