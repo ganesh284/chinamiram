@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,62 +34,109 @@
   <script src="config.js"></script>
   <style>
     .translate-container {
-    position: relative;
-    display: inline-block;
-    font-family: Arial, sans-serif;
-}
+      position: relative;
+      display: inline-block;
+      font-family: Arial, sans-serif;
+    }
 
     .goog-te-gadget {
-        color: #333;
-        font-family: inherit;
+      color: #333;
+      font-family: inherit;
     }
 
     .goog-te-gadget .goog-te-combo {
       margin: 4px 0;
-    padding: 8px 32px 8px 12px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-        background-color: white;
-        font-size: 14px;
-        color: #333;
-        cursor: pointer;
-        appearance: none;
-        -webkit-appearance: none;
-        background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.4-12.8z%22%2F%3E%3C%2Fsvg%3E");
-        background-repeat: no-repeat;
-        background-position: right 12px top 50%;
-        background-size: 12px auto;
+      padding: 8px 32px 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background-color: white;
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.4-12.8z%22%2F%3E%3C%2Fsvg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px top 50%;
+      background-size: 12px auto;
     }
 
     .goog-te-gadget .goog-te-combo:hover {
-        border-color: #bbb;
+      border-color: #bbb;
     }
 
     .goog-te-gadget .goog-te-combo:focus {
-        border-color: #4285f4;
-        outline: none;
-        box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+      border-color: #4285f4;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
     }
 
     /* Hide the Google Translate attribution */
     .goog-te-gadget-simple {
-        border: none !important;
+      border: none !important;
     }
 
     .goog-te-gadget-simple .goog-te-menu-value span {
-        display: none;
+      display: none;
     }
 
     .goog-te-banner-frame {
-        display: none !important;
+      display: none !important;
     }
+
     .goog-te-banner-frame.skiptranslate {
-        display: none !important;
+      display: none !important;
     }
+
     .goog-te-gadget-icon {
-        display: none !important;
+      display: none !important;
     }
-</style>
+
+    .container .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      background-color: #ffffff;
+      /* Card background color */
+      margin-top: 20px;
+    }
+
+    .container .card-body {
+      padding: 15px;
+    }
+
+    .form-control {
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button[type="submit"] {
+      background-color: #007bff;
+      /* Primary button color */
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+      /* Darker shade on hover */
+    }
+
+    .loading,
+    .error-message,
+    .sent-message {
+      margin-top: 10px;
+      font-size: 14px;
+      font-style: italic;
+    }
+  </style>
 
 
 
@@ -101,15 +150,16 @@
 </head>
 
 <body class="index-page">
-  
-  
+
+
 
   <header id="header" class="header sticky-top">
 
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">Chinaamiram_Panchayati@example.com</a></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a
+              href="mailto:contact@example.com">Chinaamiram_Panchayati@example.com</a></i>
           <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
@@ -141,10 +191,10 @@
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-        
+
 
         <a class="cta-btn d-none d-sm-block" href="#appointment">Grievance</a>
-        
+
         <li id="google_translate_element" class="translate-container"></li>
       </div>
 
@@ -157,19 +207,19 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
 
-      <img src="assets/img/gallery/18.jpg" alt="" class="img-fluid rounded shadow-sm"  data-aos="fade-in" style="max-width: 100%; height: auto;">
+      <img src="assets/img/gallery/18.jpg" alt="" class="img-fluid rounded shadow-sm" data-aos="fade-in"
+        style="max-width: 100%; height: auto;">
 
 
       <div class="container position-relative">
-
-      
-
         <div class="content row gy-4">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
               <h3 class="notranslate" translate="no">Smart Village</h3>
               <p>
-                Welcome to Chinamiram, where tradition meets innovation! From modern infrastructure to eco-friendly initiatives, this vibrant village redefines rural living with smart solutions, making it a shining example of progress and sustainability.
+                Welcome to Chinamiram, where tradition meets innovation! From modern infrastructure to eco-friendly
+                initiatives, this vibrant village redefines rural living with smart solutions, making it a shining
+                example of progress and sustainability.
               </p>
               <div class="text-center">
                 <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
@@ -189,54 +239,64 @@
 
         <div class="row gy-4 gx-5">
 
-          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-            <img src="https://img.youtube.com/vi/9MgJxsCB_ME/0.jpg" class="img-fluid" alt="">
-            <a href="https://youtu.be/9MgJxsCB_ME?si=uQJPst8w59Am_Crj" class="glightbox pulsating-play-btn"></a>
-          </div>
+
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
             <h3>About Panchayti</h3>
             <p>
-              Chinamiram Gram Panchayat is the local self-government of the village. The elected members of the gram panchayat are headed by a Sarpanch. The current Sarpanch of the village, Srinivasa Raju, was awarded the Nirmala Grama Puraskaram for the year 2013. The efforts put forth by the local community and administration have yielded outstanding results. Chinamiram village, located in Bhimavaram Mandal of West Godavari district, has been declared a "Smart Village" in the country.
+              Chinamiram Gram Panchayat is the local self-government of the village. The elected members of the gram
+              panchayat are headed by a Sarpanch. The current Sarpanch of the village, Srinivasa Raju, was awarded the
+              Nirmala Grama Puraskaram for the year 2013. The efforts put forth by the local community and
+              administration have yielded outstanding results. Chinamiram village, located in Bhimavaram Mandal of West
+              Godavari district, has been declared a "Smart Village" in the country.
             </p>
             <ul>
               <li>
                 <i class="fa-solid fa-water"></i>
                 <div>
                   <h5>Drainage System Maintenance</h5>
-                  <p>The Panchayat has introduced several measures to maintain the drainage system, ensuring a cleaner and healthier environment for the villagers.</p>
+                  <p>The Panchayat has introduced several measures to maintain the drainage system, ensuring a cleaner
+                    and healthier environment for the villagers.</p>
                 </div>
               </li>
               <li>
                 <i class="fa-solid fa-faucet"></i>
                 <div>
                   <h5>Drinking Water Supply</h5>
-                  <p>Efforts have been made to improve the drinking water supply, ensuring clean and safe water for the residents of Chinamiram.</p>
+                  <p>Efforts have been made to improve the drinking water supply, ensuring clean and safe water for the
+                    residents of Chinamiram.</p>
                 </div>
               </li>
               <li>
                 <i class="fa-solid fa-road"></i>
                 <div>
                   <h5>Road Network Development</h5>
-                  <p>The village has worked on road network development, improving connectivity and infrastructure for better accessibility.</p>
+                  <p>The village has worked on road network development, improving connectivity and infrastructure for
+                    better accessibility.</p>
                 </div>
               </li>
               <li>
                 <i class="fa-solid fa-building"></i>
                 <div>
                   <h5>Increased Taxes for Infrastructure</h5>
-                  <p>To meet the financial needs and strengthen village infrastructure, the Panchayat introduced increased taxes, generating Rs 1 crore in revenue.</p>
+                  <p>To meet the financial needs and strengthen village infrastructure, the Panchayat introduced
+                    increased taxes, generating Rs 1 crore in revenue.</p>
                 </div>
               </li>
               <li>
                 <i class="fa-solid fa-people-arrows"></i>
                 <div>
                   <h5>Welfare, Development, and Health</h5>
-                  <p>The village has adopted welfare, development, and health as the main parameters for the overall development, setting an example for many habitations in Andhra Pradesh.</p>
+                  <p>The village has adopted welfare, development, and health as the main parameters for the overall
+                    development, setting an example for many habitations in Andhra Pradesh.</p>
                 </div>
               </li>
             </ul>
-          </div>          
+          </div>
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://img.youtube.com/vi/9MgJxsCB_ME/0.jpg" class="img-fluid" alt="">
+            <a href="https://youtu.be/9MgJxsCB_ME?si=uQJPst8w59Am_Crj" class="glightbox pulsating-play-btn"></a>
+          </div>
 
         </div>
 
@@ -254,7 +314,8 @@
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="fa-solid fa-users"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="4699" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="4699" data-purecounter-duration="1"
+                class="purecounter"></span>
               <p>Total Population</p>
             </div>
           </div><!-- End Stats Item -->
@@ -262,7 +323,8 @@
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="fa-solid fa-male"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="2304" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="2304" data-purecounter-duration="1"
+                class="purecounter"></span>
               <p>Males</p>
             </div>
           </div><!-- End Stats Item -->
@@ -270,7 +332,8 @@
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="fa-solid fa-female"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="2395" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="2395" data-purecounter-duration="1"
+                class="purecounter"></span>
               <p>Females</p>
             </div>
           </div><!-- End Stats Item -->
@@ -278,7 +341,8 @@
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="fas fa-user-graduate"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="78.78" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="78.78" data-purecounter-duration="1"
+                class="purecounter"></span>
               <p>Average Literacy(%)</p>
             </div>
           </div><!-- End Stats Item -->
@@ -299,373 +363,345 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-
         <div class="row gy-4">
-          
-
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <!-- Video Section -->
-              <div class="video-container position-relative align-self-start">
-                <img src="https://img.youtube.com/vi/7rizukI9ziM/0.jpg" class="img-fluid" alt="Video Thumbnail">
-                <a href="https://youtu.be/7rizukI9ziM?si=1xgrbO8pnFo7sUXK" class="glightbox pulsating-play-btn"></a>
-              </div>
+            <!-- Video Section -->
+            <div class="video-container position-relative align-self-start">
+              <img src="https://img.youtube.com/vi/7rizukI9ziM/0.jpg" class="img-fluid" alt="Video Thumbnail">
+              <a href="https://youtu.be/7rizukI9ziM?si=1xgrbO8pnFo7sUXK" class="glightbox pulsating-play-btn"></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <!-- Video Section -->
-              <div class="video-container position-relative align-self-start">
-                <img src="https://img.youtube.com/vi/ra6gCfy2-gw/0.jpg" class="img-fluid" alt="Video Thumbnail">
-                <a href="https://youtu.be/ra6gCfy2-gw?si=F6WUcX15JahAg6Wd" class="glightbox pulsating-play-btn"></a>
-              </div>
+            <!-- Video Section -->
+            <div class="video-container position-relative align-self-start">
+              <img src="https://img.youtube.com/vi/ra6gCfy2-gw/0.jpg" class="img-fluid" alt="Video Thumbnail">
+              <a href="https://youtu.be/ra6gCfy2-gw?si=F6WUcX15JahAg6Wd" class="glightbox pulsating-play-btn"></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <!-- Video Section -->
-              <div class="video-container position-relative align-self-start">
-                <img src="https://img.youtube.com/vi/O4ut5dbxmdc/0.jpg" class="img-fluid" alt="Video Thumbnail">
-                <a href="https://youtu.be/O4ut5dbxmdc?si=DmiQ2l8W-3qdeR9q" class="glightbox pulsating-play-btn"></a>
-              </div>
+            <!-- Video Section -->
+            <div class="video-container position-relative align-self-start">
+              <img src="https://img.youtube.com/vi/O4ut5dbxmdc/0.jpg" class="img-fluid" alt="Video Thumbnail">
+              <a href="https://youtu.be/O4ut5dbxmdc?si=DmiQ2l8W-3qdeR9q" class="glightbox pulsating-play-btn"></a>
             </div>
           </div><!-- End Service Item -->
-          
+
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <!-- Video Section -->
-              <div class="video-container position-relative align-self-start">
-                <img src="https://img.youtube.com/vi/bUWUKd6mEgQ/0.jpg" class="img-fluid" alt="Video Thumbnail">
-                <a href="https://youtu.be/bUWUKd6mEgQ?si=h8hMJv6HsOBvmk-3" class="glightbox pulsating-play-btn"></a>
-              </div>
+            <!-- Video Section -->
+            <div class="video-container position-relative align-self-start">
+              <img src="https://img.youtube.com/vi/bUWUKd6mEgQ/0.jpg" class="img-fluid" alt="Video Thumbnail">
+              <a href="https://youtu.be/bUWUKd6mEgQ?si=h8hMJv6HsOBvmk-3" class="glightbox pulsating-play-btn"></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <!-- Video Section -->
-              <div class="video-container position-relative align-self-start">
-                <img src="https://img.youtube.com/vi/f-4VzLSVPDg/0.jpg" class="img-fluid" alt="Video Thumbnail">
-                <a href="https://youtu.be/f-4VzLSVPDg?si=1PKyPpKLla-3mcXq" class="glightbox pulsating-play-btn"></a>
-              </div>
+            <!-- Video Section -->
+            <div class="video-container position-relative align-self-start">
+              <img src="https://img.youtube.com/vi/f-4VzLSVPDg/0.jpg" class="img-fluid" alt="Video Thumbnail">
+              <a href="https://youtu.be/f-4VzLSVPDg?si=1PKyPpKLla-3mcXq" class="glightbox pulsating-play-btn"></a>
             </div>
           </div><!-- End Service Item -->
-          
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <!-- Video Section -->
-              <div class="video-container position-relative align-self-start">
-                <img src="https://img.youtube.com/vi/m1nTXSwvFyo/0.jpg" class="img-fluid" alt="Video Thumbnail">
-                <a href="https://youtu.be/m1nTXSwvFyo?si=ys1UICshqhkP-ji5" class="glightbox pulsating-play-btn"></a>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-         
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <!-- Video Section -->
-              <div class="video-container position-relative align-self-start">
-                <img src="assets/img/gallery/16.jpg" class="img-fluid" alt="Video Thumbnail">
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <!-- Video Section -->
-              <div class="video-container position-relative align-self-start">
-                <img src="assets/img/gallery/20.jpeg" class="img-fluid" alt="Video Thumbnail">
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <!-- Video Section -->
-              <div class="video-container position-relative align-self-start">
-                <img src="assets/img/gallery/10.jpg" class="img-fluid" alt="Video Thumbnail">
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <!-- Video Section -->
-              <div class="video-container position-relative align-self-start">
-                <img src="assets/img/gallery/12.png" class="img-fluid" alt="Video Thumbnail">
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <!-- Video Section -->
-              <div class="video-container position-relative align-self-start">
-                <img src="assets/img/gallery/13.png" class="img-fluid" alt="Video Thumbnail">
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <!-- Video Section -->
-              <div class="video-container position-relative align-self-start">
-                <img src="assets/img/gallery/19.png" class="img-fluid" alt="Video Thumbnail">
-              </div>
-            </div>
-            
-          </div><!-- End Service Item -->
-         
-          
 
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <!-- Video Section -->
+            <div class="video-container position-relative align-self-start">
+              <img src="https://img.youtube.com/vi/m1nTXSwvFyo/0.jpg" class="img-fluid" alt="Video Thumbnail">
+              <a href="https://youtu.be/m1nTXSwvFyo?si=ys1UICshqhkP-ji5" class="glightbox pulsating-play-btn"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <!-- Video Section -->
+            <div class="video-container position-relative align-self-start">
+              <img src="assets/img/gallery/16.jpg" class="img-fluid" alt="Video Thumbnail">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <!-- Video Section -->
+            <div class="video-container position-relative align-self-start">
+              <img src="assets/img/gallery/20.jpeg" class="img-fluid" alt="Video Thumbnail">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <!-- Video Section -->
+            <div class="video-container position-relative align-self-start">
+              <img src="assets/img/gallery/10.jpg" class="img-fluid" alt="Video Thumbnail">
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <!-- Video Section -->
+            <div class="video-container position-relative align-self-start">
+              <img src="assets/img/gallery/12.png" class="img-fluid" alt="Video Thumbnail">
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <!-- Video Section -->
+            <div class="video-container position-relative align-self-start">
+              <img src="assets/img/gallery/13.png" class="img-fluid" alt="Video Thumbnail">
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <!-- Video Section -->
+            <div class="video-container position-relative align-self-start">
+              <img src="assets/img/gallery/19.png" class="img-fluid" alt="Video Thumbnail">
+            </div>
+          </div><!-- End Service Item -->
         </div>
-
       </div>
-      <section id="appointment" class="appointment section">
 
+
+      <section id="appointment" class="appointment section">
         <div class="container section-title" data-aos="fade-up">
           <h2>Grievance</h2>
           <p>Raise your complaints and get the solution.</p>
         </div><!-- End Section Title -->
-      
+
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <form id="whatsappForm" action="#" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="row gy-4">
-              
-              <div class="col-md-6">
-              <input type="text" name="name" for="name" class="form-control" placeholder="Your Name" required="">
-              </div>
-              
-            <div class="col-md-6 ">
-              <input type="tel" class="form-control" for="mobile" name="mobile" placeholder="Phone number" required="">
-              </div>
-      
-              <div class="col-md-12">
-              <input type="text" for="subject" class="form-control" name="subject" placeholder="Subject" required="">
-              </div>
-      
-              <div class="col-md-12">
-              <textarea for="complaint" class="form-control" name="complaint" id="complaint" rows="6" placeholder="Description" required=""></textarea>
-              </div>
-      
-              <div class="col-md-12 text-center">
-                <div id="loading" class="loading" style="display: none;">Loading...</div>
-                <div class="error-message" style="display: none; "></div>
-                <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
-                <button type="submit">Send Message</button>
-            </div>            
-              
+          <div class="card">
+            <div class="card-body">
+              <form id="whatsappForm" action="#" method="post" class="php-email-form" data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="tel" class="form-control" name="mobile" placeholder="Phone number" required="">
+                  </div>
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
+                  <div class="col-md-12">
+                    <textarea class="form-control" name="complaint" id="complaint" rows="6" placeholder="Description"
+                      required=""></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <div id="loading" class="loading" style="display: none;">Loading...</div>
+                    <div class="error-message" style="display: none;"></div>
+                    <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
             </div>
-          </form>
-      
+          </div>
         </div>
-      
       </section>
-      
-    <!-- Departments Section -->
-    <section id="departments" class="departments section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Departments</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      <!-- Departments Section -->
+      <section id="departments" class="departments section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Departments</h2>
+          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row">
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">Rural Development and Infrastructure</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">Health and Sanitation</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Education and Welfare</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Agriculture and Livestock Development</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Revenue and Taxation</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="departments-tab-1">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Rural Development and Infrastructure</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-1.jpeg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-2">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3> Health and Sanitation</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-2.webp" alt="" class="img-fluid">
+          <div class="row">
+            <div class="col-lg-3">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">Rural Development and
+                    Infrastructure</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">Health and Sanitation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Education and Welfare</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Agriculture and Livestock
+                    Development</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Revenue and Taxation</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-9 mt-4 mt-lg-0">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="departments-tab-1">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Rural Development and Infrastructure</h3>
+                      <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata
+                        raqer a videna mareta paulona marka</p>
+                      <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa
+                        odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni
+                        nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/departments-1.jpeg" alt="" class="img-fluid">
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-3">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Education and Welfare</h3>
-                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-4">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Agriculture and Livestock Development</h3>
-                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-4.png" alt="" class="img-fluid">
+                <div class="tab-pane" id="departments-tab-2">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3> Health and Sanitation</h3>
+                      <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata
+                        raqer a videna mareta paulona marka</p>
+                      <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt
+                        est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt
+                        eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/departments-2.webp" alt="" class="img-fluid">
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="tab-pane" id="departments-tab-5">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Revenue and Taxation</h3>
-                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                <div class="tab-pane" id="departments-tab-3">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Education and Welfare</h3>
+                      <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui
+                        natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
+                      <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque
+                        necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio.
+                        Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
+                    </div>
                   </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="tab-pane" id="departments-tab-4">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Agriculture and Livestock Development</h3>
+                      <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis
+                        delectus</p>
+                      <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus
+                        aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi
+                        asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/departments-4.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="departments-tab-5">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Revenue and Taxation</h3>
+                      <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                      <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut
+                        quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae
+                        molestiae voluptate vel</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- /Departments Section -->
 
-      </div>
+      <!-- Doctors Section -->
+      <section id="doctors" class="doctors section">
 
-    </section><!-- /Departments Section -->
 
-    <!-- Doctors Section -->
-    <section id="doctors" class="doctors section">
-
-      
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Members</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div>
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/person/person.png" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>M Sireesha</h4>
-                <span>Panchayat Sarpanch</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/person/person.png" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>K Sivakumar</h4>
-                <span>Panchayat Secretary</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/person/person.png" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>M Nayanappa</h4>
-                <span>Ward Member</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/person/person.png" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>P Yerrayyanaidu</h4>
-                <span>Ward Member</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Members</h2>
+          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
         </div>
 
-      </div>
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="team-member d-flex align-items-start">
+                <div class="pic"><img src="assets/img/person/person.png" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>M Sireesha</h4>
+                  <span>Panchayat Sarpanch</span>
+                  <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="team-member d-flex align-items-start">
+                <div class="pic"><img src="assets/img/person/person.png" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>K Sivakumar</h4>
+                  <span>Panchayat Secretary</span>
+                  <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
 
-    </section>
-    <section id="testimonials" class="testimonials section">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="team-member d-flex align-items-start">
+                <div class="pic"><img src="assets/img/person/person.png" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>M Nayanappa</h4>
+                  <span>Ward Member</span>
+                  <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
 
-      <div class="container">
-
-        <div class="row align-items-center">
-
-          <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
-            <h3>Testimonials</h3>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            </p>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="team-member d-flex align-items-start">
+                <div class="pic"><img src="assets/img/person/person.png" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>P Yerrayyanaidu</h4>
+                  <span>Ward Member</span>
+                  <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Team Member -->
           </div>
+        </div>
+      </section>
 
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="swiper init-swiper">
-              <script type="application/json" class="swiper-config">
+      <section id="testimonials" class="testimonials section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+              <h3>Testimonials</h3>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              </p>
+            </div>
+            <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+              <div class="swiper init-swiper">
+                <script type="application/json" class="swiper-config">
                 {
                   "loop": true,
                   "speed": 600,
@@ -680,225 +716,226 @@
                   }
                 }
               </script>
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>Saul Goodman</h3>
-                        <h4>Ceo &amp; Founder</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex">
+                        <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0"
+                          alt="">
+                        <div>
+                          <h3>Saul Goodman</h3>
+                          <h4>Ceo &amp; Founder</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
                         </div>
                       </div>
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                          Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
+                          semper.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
                     </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
+                  </div><!-- End testimonial item -->
 
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>Sara Wilsson</h3>
-                        <h4>Designer</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex">
+                        <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0"
+                          alt="">
+                        <div>
+                          <h3>Sara Wilsson</h3>
+                          <h4>Designer</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
                         </div>
                       </div>
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum
+                          eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
+                          culpa.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
                     </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
+                  </div><!-- End testimonial item -->
 
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>Jena Karlis</h3>
-                        <h4>Store Owner</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex">
+                        <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0"
+                          alt="">
+                        <div>
+                          <h3>Jena Karlis</h3>
+                          <h4>Store Owner</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
                         </div>
                       </div>
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam
+                          duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
                     </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
+                  </div><!-- End testimonial item -->
 
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>Matt Brandon</h3>
-                        <h4>Freelancer</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex">
+                        <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0"
+                          alt="">
+                        <div>
+                          <h3>Matt Brandon</h3>
+                          <h4>Freelancer</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
                         </div>
                       </div>
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat
+                          minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore
+                          illum veniam.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
                     </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
+                  </div><!-- End testimonial item -->
 
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0" alt="">
-                      <div>
-                        <h3>John Larson</h3>
-                        <h4>Entrepreneur</h4>
-                        <div class="stars">
-                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="d-flex">
+                        <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0"
+                          alt="">
+                        <div>
+                          <h3>John Larson</h3>
+                          <h4>Entrepreneur</h4>
+                          <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
                         </div>
                       </div>
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam
+                          enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi
+                          cillum quid.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
                     </div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div><!-- End testimonial item -->
-
+                  </div><!-- End testimonial item -->
+                </div>
+                <div class="swiper-pagination"></div>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
-
           </div>
-
         </div>
+      </section><!-- /Testimonials Section -->
 
-      </div>
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Gallery</h2>
+          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
 
-    </section><!-- /Testimonials Section -->
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-0">
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/1.jpg" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/1.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/2.jpg" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/2.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Gallery</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/3.jpg" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/3.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
 
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/4.jpg" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/4.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
 
-        <div class="row g-0">
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/5.jpg" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/5.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/1.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/7.jpg" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/7.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/2.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/2.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/15.jpg" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/15.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/3.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/3.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/4.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/4.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/5.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/5.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/7.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/7.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/15.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/15.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/18.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/18.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div><!-- End Gallery Item -->
-
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/18.jpg" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/18.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div><!-- End Gallery Item -->
+          </div>
         </div>
+      </section><!-- /Gallery Section -->
 
-      </div>
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
 
-    </section><!-- /Gallery Section -->
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Here is the map of the panchayti office.</p>
+        </div><!-- End Section Title -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Here is the map of the panchayti office.</p>
-      </div><!-- End Section Title -->
-
-      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61198.37158664695!2d81.49211000000001!3d16.531235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a362d691bf65233%3A0xafdfd67c8a900867!2sChinaamiram%20Panchayati%20Office!5e0!3m2!1sen!2sin!4v1735141066896!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
+        <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61198.37158664695!2d81.49211000000001!3d16.531235!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a362d691bf65233%3A0xafdfd67c8a900867!2sChinaamiram%20Panchayati%20Office!5e0!3m2!1sen!2sin!4v1735141066896!5m2!1sen!2sin"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
+      </section><!-- /Contact Section -->
   </main>
 
   <footer id="footer" class="footer light-background">
@@ -980,7 +1017,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -995,48 +1033,48 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-    <script>
-  document.getElementById('whatsappForm').addEventListener('submit', async function(e) {
-    e.preventDefault();
+  <script>
+    document.getElementById('whatsappForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
 
-    const loading = document.getElementById('loading');
-    const errorMessage = document.querySelector('.error-message');
-    const sentMessage = document.querySelector('.sent-message');
+      const loading = document.getElementById('loading');
+      const errorMessage = document.querySelector('.error-message');
+      const sentMessage = document.querySelector('.sent-message');
 
-    loading.style.display = 'block';
-    errorMessage.style.display = 'none';
-    sentMessage.style.display = 'none';
+      loading.style.display = 'block';
+      errorMessage.style.display = 'none';
+      sentMessage.style.display = 'none';
 
-    const formData = {
+      const formData = {
         name: this.querySelector('input[name="name"]').value,
         mobile: this.querySelector('input[name="mobile"]').value,
         subject: this.querySelector('input[name="subject"]').value,
         complaint: this.querySelector('textarea[name="complaint"]').value,
-    };
+      };
 
-    try {
+      try {
         const whatsappNumber = "918919218529";
         const apiEndpoint = `https://live-mt-server.wati.io/324318/api/v1/sendTemplateMessage?whatsappNumber=${whatsappNumber}`;
-        
+
         const templateRequest = {
-            template_name: "diwali",
-            broadcast_name: "diwali_301220241212",
-            parameters: [
-                { 
-                    name: "vamsi",
-                    value: formData.name 
-                }
-            ]
+          template_name: "diwali",
+          broadcast_name: "diwali_301220241212",
+          parameters: [
+            {
+              name: "vamsi",
+              value: formData.name
+            }
+          ]
         };
 
         const response = await fetch(apiEndpoint, {
-            method: 'POST',
-            headers: {
-                'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3MGQxZmMzMC1iZDM4LTQ2OGEtOTQ1Ni03Y2FkZjBmZDkxNDYiLCJ1bmlxdWVfbmFtZSI6InNhbmp1X2NzZEBzcmtyZWMuZWR1LmluIiwibmFtZWlkIjoic2FuanVfY3NkQHNya3JlYy5lZHUuaW4iLCJlbWFpbCI6InNhbmp1X2NzZEBzcmtyZWMuZWR1LmluIiwiYXV0aF90aW1lIjoiMTIvMzAvMjAyNCAwNjozMzowMSIsInRlbmFudF9pZCI6IjMyNDMxOCIsImRiX25hbWUiOiJtdC1wcm9kLVRlbmFudHMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBRE1JTklTVFJBVE9SIiwiZXhwIjoyNTM0MDIzMDA4MDAsImlzcyI6IkNsYXJlX0FJIiwiYXVkIjoiQ2xhcmVfQUkifQ.YCqRPyF1jER214sFJuYlN05RbmQTFJ0m4-9bpupoq_Y',
-                'Content-Type': 'application/json-patch+json',
-                'accept': '/'
-            },
-            body: JSON.stringify(templateRequest)
+          method: 'POST',
+          headers: {
+            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3MGQxZmMzMC1iZDM4LTQ2OGEtOTQ1Ni03Y2FkZjBmZDkxNDYiLCJ1bmlxdWVfbmFtZSI6InNhbmp1X2NzZEBzcmtyZWMuZWR1LmluIiwibmFtZWlkIjoic2FuanVfY3NkQHNya3JlYy5lZHUuaW4iLCJlbWFpbCI6InNhbmp1X2NzZEBzcmtyZWMuZWR1LmluIiwiYXV0aF90aW1lIjoiMTIvMzAvMjAyNCAwNjozMzowMSIsInRlbmFudF9pZCI6IjMyNDMxOCIsImRiX25hbWUiOiJtdC1wcm9kLVRlbmFudHMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBRE1JTklTVFJBVE9SIiwiZXhwIjoyNTM0MDIzMDA4MDAsImlzcyI6IkNsYXJlX0FJIiwiYXVkIjoiQ2xhcmVfQUkifQ.YCqRPyF1jER214sFJuYlN05RbmQTFJ0m4-9bpupoq_Y',
+            'Content-Type': 'application/json-patch+json',
+            'accept': '/'
+          },
+          body: JSON.stringify(templateRequest)
         });
 
         const result = await response.json();
@@ -1045,70 +1083,71 @@
         loading.style.display = 'none';
 
         if (result.result === true) {
-            Swal.fire({
-                title: 'Success!',
-                text: 'Your message has been sent successfully!',
-                icon: 'success',
-                confirmButtonText: 'OK'
-            }).then(() => {
-                this.reset();
-            });
+          Swal.fire({
+            title: 'Success!',
+            text: 'Your message has been sent successfully!',
+            icon: 'success',
+            confirmButtonText: 'OK'
+          }).then(() => {
+            this.reset();
+          });
         } else {
-            throw new Error('Message sending failed');
+          throw new Error('Message sending failed');
         }
-    } catch (error) {
+      } catch (error) {
         console.error('Error:', error);
         loading.style.display = 'none';
-        
+
         // Show error popup
         Swal.fire({
-            title: 'Error!',
-            text: error.message,
-            icon: 'error',
-            confirmButtonText: 'OK'
+          title: 'Error!',
+          text: error.message,
+          icon: 'error',
+          confirmButtonText: 'OK'
         });
-    }
-});
+      }
+    });
   </script>
-<script type="text/javascript">
-  function googleTranslateElementInit() {
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
       new google.translate.TranslateElement({
-          pageLanguage: 'en',
-          includedLanguages: 'en,te,hi',
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false
+        pageLanguage: 'en',
+        includedLanguages: 'en,te,hi',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
       }, 'google_translate_element');
-  }
+    }
 
-  // Additional function to ensure elements stay untranslated
-  function preventTranslation() {
+    // Additional function to ensure elements stay untranslated
+    function preventTranslation() {
       // Create a mutation observer to watch for changes
       const observer = new MutationObserver((mutations) => {
-          mutations.forEach((mutation) => {
-              // Check if Google has translated the page
-              if (document.querySelector('.goog-te-combo')) {
-                  // Re-apply the original text to protected elements
-                  document.querySelectorAll('.notranslate').forEach((element) => {
-                      if (element.textContent !== 'Why Choose Medilab?') {
-                          element.textContent = 'Why Choose Medilab?';
-                      }
-                  });
+        mutations.forEach((mutation) => {
+          // Check if Google has translated the page
+          if (document.querySelector('.goog-te-combo')) {
+            // Re-apply the original text to protected elements
+            document.querySelectorAll('.notranslate').forEach((element) => {
+              if (element.textContent !== 'Why Choose Medilab?') {
+                element.textContent = 'Why Choose Medilab?';
               }
-          });
+            });
+          }
+        });
       });
 
       // Start observing the document for changes
       observer.observe(document.body, {
-          childList: true,
-          subtree: true
+        childList: true,
+        subtree: true
       });
-  }
+    }
 
-  // Call the function when the page loads
-  window.addEventListener('load', preventTranslation);
-</script>
+    // Call the function when the page loads
+    window.addEventListener('load', preventTranslation);
+  </script>
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
 </body>
